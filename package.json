@@ -1,0 +1,26 @@
+{
+  "name": "core.io-express-auth",
+  "version": "0.0.0",
+  "description": "Module providing Passport.js auth for express",
+  "main": "index.js",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "bluebird": "^3.4.7",
+    "passport-local": "^1.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "htts://github.com/goliatone/core.io-express-auth"
+  },
+  "keywords": [
+    "core.io",
+    "passport",
+    "auth"
+  ],
+  "author": "goliatone <hello@goliatone.com> (http://goliatone.com/)",
+  "license": "MIT"
+}
