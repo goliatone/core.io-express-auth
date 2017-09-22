@@ -25,6 +25,29 @@
 - `GET /auth/:provider/:action`: 'AuthController.callback'
 
 
+#### Custom Error views
+
+If our sub-app has the following view structure:
+
+```
+.
+├── views
+│   ├── error-layout.ejs
+│   ├── 401.ejs
+│   └── 403.ejs
+```
+
+The error view will be rendered with the following locals:
+
+```js
+let locals = {
+    isErrorView: true,
+    status: status,
+    message: err.message,
+    error: err
+};
+```
+
 ### TODO
 - [ ] Integrate with **sockets.io**
 - [x] Manage locals index.js L-482
