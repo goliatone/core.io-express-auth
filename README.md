@@ -37,4 +37,5 @@
 
 <!--
 https://github.com/trailsjs/sails-permissions
+https://www.npmjs.com/package/deployd
 -->
