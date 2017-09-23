@@ -5,6 +5,7 @@ const extend = require('gextend');
 const express = require('express');
 const Keypath = require('gkeypath');
 
+const AuthController = require('./lib/AuthController');
 const extendPassport = require('./lib/extendPassport');
 
 /**
@@ -19,7 +20,7 @@ const extendPassport = require('./lib/extendPassport');
  * @return {void}
  */
 module.exports = function(app, config){
-
+    
     if(!config.logger) config.logger = console;
 
     config.logger.info('======> passport');
@@ -45,12 +46,6 @@ module.exports = function(app, config){
      * - logout
      */
     let router = express.Router();
-
-    //TODO: Manage locals
-    let routeLocals = Keypath.get(config, 'routeLocals', {});
-    let locals = extend({}, config.locals, routeLocals['/login']);
-
-    const AuthController = require('./lib/AuthController');
 
     let authController = AuthController.init(app, config);
 
