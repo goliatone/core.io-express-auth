@@ -1,4 +1,3 @@
-/*jshint esversion:6, node:true*/
 'use strict';
 
 const extend = require('gextend');
@@ -19,7 +18,7 @@ const extendPassport = require('./lib/extendPassport');
  * @param  {Object} config config.server value.
  * @return {void}
  */
-module.exports = function(app, config){
+module.exports = function(app, config) {
     
     if(!config.logger) config.logger = console;
 

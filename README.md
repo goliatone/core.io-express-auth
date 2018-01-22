@@ -65,4 +65,6 @@ https://github.com/trailsjs/sails-permissions
 https://github.com/jfromaniello/passport.socketio
 https://github.com/FilipLukac/passport-socketio-redis
 https://www.npmjs.com/package/deployd
+
+https://gist.github.com/danwit/e0a7c5ad57c9ce5659d2
 -->
