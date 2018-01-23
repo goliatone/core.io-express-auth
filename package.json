@@ -1,6 +1,6 @@
 {
   "name": "core.io-express-auth",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Module providing Passport.js auth for express",
   "main": "index.js",
   "dependencies": {
